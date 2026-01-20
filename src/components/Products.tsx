@@ -9,18 +9,18 @@ const products = [
     tech: ["React", "TypeScript", "Tailwind CSS"],
   },
   {
-    title: "ITパスポート かこもんくん",
-    description: "ITパスポート試験の過去問演習特化型webアプリです。",
-    image: "/images/kakomonkun.png",
-    link: "https://ip-kakomonkun.com",
-    tech: ["PHP", "JavaScript", "MySQL"],
-  },
-  {
     title: "MagicBox",
     description: "入力に応じて図形が変化させて遊ぶことができます。",
     image: "/images/myicon.png",
     link: "https://ichi-ryota0513.github.io/MagicBox/",
     tech: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "ITパスポート かこもんくん",
+    description: "ITパスポート試験の過去問演習特化型webアプリです。",
+    image: "/images/kakomonkun.png",
+    link: "https://ip-kakomonkun.com",
+    tech: ["PHP", "JavaScript", "MySQL"],
   },
   {
     title: "キャンフェスサイト2024",
