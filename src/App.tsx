@@ -1,5 +1,6 @@
 import Header from "./components/Header"
-import Hero from "./components/Hero"
+import Skills from "./components/Skills"
+import Profile from "./components/Profile"
 import Products from "./components/Products"
 import Milestones from "./components/Milestones"
 import Footer from "./components/Footer"
@@ -9,7 +10,8 @@ function App() {
     <>
       <Header />
       <main>
-        <Hero />
+        <Profile />
+        <Skills />
         <Products />
         <Milestones />
       </main>

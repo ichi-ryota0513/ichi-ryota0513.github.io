@@ -2,12 +2,20 @@ import SectionBackground from "./SectionBackground"
 
 const works = [
   {
+    year: "2026",
+    title: "プロジェクトNγ 全国共有会出場",
+  },
+  {
+    year: "2025",
+    title: "キャンフェス実行委員長就任",
+  },
+  {
     year: "2025",
     title: "「ITパスポート かこもんくん」リリース",
   },
   {
     year: "2024",
-    title: "ITパスポート取得",
+    title: "ITパスポート試験取得",
   },
   {
     year: "2023",
@@ -23,7 +31,7 @@ export default function Milestones() {
       className="relative py-32 scroll-mt-20"
     >
       {/* Background */}
-      <SectionBackground variant="pattern1" />
+      <SectionBackground variant="pattern2" />
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-10">

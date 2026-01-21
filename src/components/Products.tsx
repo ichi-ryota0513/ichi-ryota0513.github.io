@@ -38,7 +38,7 @@ export default function Products() {
       className="relative py-32 scroll-mt-20"
     >
       {/* Background */}
-      <SectionBackground variant="pattern2" />
+      <SectionBackground variant="pattern1" />
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-10">

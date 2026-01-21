@@ -12,6 +12,18 @@ export default function Header() {
         {/* Navigation */}
         <nav className="flex gap-8 text-base text-white/80">
           <a
+            href="#profile"
+            className="hover:text-primary transition-colors"
+          >
+            Profile
+          </a>
+          <a
+            href="#skills"
+            className="hover:text-primary transition-colors"
+          >
+            Skills
+          </a>
+          <a
             href="#products"
             className="hover:text-primary transition-colors"
           >

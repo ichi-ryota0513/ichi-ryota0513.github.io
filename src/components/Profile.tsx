@@ -1,9 +1,12 @@
 import iconImage from "../assets/myicon.png"
 import SectionBackground from "./SectionBackground"
 
-export default function Hero() {
+export default function Profile() {
   return (
-    <section className="relative min-h-screen flex items-center">
+    <section
+      id="profile"
+      className="relative min-h-screen flex items-center scroll-mt-20"
+    >
       <SectionBackground variant="pattern1" />
 
       {/* Content */}
@@ -18,8 +21,10 @@ export default function Hero() {
             <span className="text-primary">ICHIKAWA</span>
           </h1>
           <p className="text-white/70 max-w-md leading-relaxed">
+            生年月日：2008年5月13日<br />
             趣味：サッカー観戦<br />
             特技：ルービックキューブ<br />
+            2025年度 キャンフェス実行委員長<br />
             デジタル委員会所属
           </p>
         </div>
