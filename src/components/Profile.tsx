@@ -12,7 +12,7 @@ export default function Profile() {
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-10 w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         {/* Text */}
-        <div>
+        <div className="pt-20">
           <p className="text-primary text-sm tracking-widest mb-4">
             PORTFOLIO
           </p>
@@ -20,13 +20,15 @@ export default function Profile() {
             RYOTA<br />
             <span className="text-primary">ICHIKAWA</span>
           </h1>
-          <p className="text-white/70 max-w-md leading-relaxed">
-            生年月日：2008年5月13日<br />
-            趣味：サッカー観戦<br />
-            特技：ルービックキューブ<br />
-            2025年度 キャンフェス実行委員長<br />
-            デジタル委員会所属
-          </p>
+          <div className="relative px-6 py-4 border border-white/20 rounded-2xl bg-secondary/20 backdrop-blur-sm">
+            <p className="text-white/70 max-w-md leading-relaxed">
+              生年月日：2008年5月13日<br />
+              趣味：サッカー観戦<br />
+              特技：ルービックキューブ<br />
+              2025年度 キャンフェス実行委員長<br />
+              デジタル委員会ナレッジベース部門所属
+            </p>
+          </div>
         </div>
 
         {/* Icon */}

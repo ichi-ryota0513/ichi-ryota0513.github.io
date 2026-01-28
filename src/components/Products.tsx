@@ -57,7 +57,7 @@ export default function Products() {
               href={item.link}
               target={item.link.startsWith("http") ? "_blank" : undefined}
               rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="group block"
+              className="group block bg-secondary/20 backdrop-blur-sm"
             >
               <div className="flex items-start gap-8 p-6 border rounded-xl border-white/20 hover:border-primary transition-colors">
                 {/* Icon */}
