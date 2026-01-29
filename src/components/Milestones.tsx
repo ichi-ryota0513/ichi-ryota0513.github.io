@@ -1,6 +1,12 @@
 import SectionBackground from "./SectionBackground"
 
-const works = [
+const milestones = [
+  /* 
+  {
+    year: "2026",
+    title: "日経STOCKリーグ 一次審査通過",
+  },
+  */
   {
     year: "2026",
     title: "プロジェクトNγ 全国共有会出場",
@@ -42,9 +48,9 @@ export default function Milestones() {
           </h2>
         </div>
 
-        {/* Works List */}
+        {/* Milestones List */}
         <div className="space-y-16">
-          {works.map((item, index) => (
+          {milestones.map((item, index) => (
             <div
               key={index}
               className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start"
