@@ -1,5 +1,6 @@
 import SectionBackground from "./SectionBackground"
-import { Monitor, Server, Wrench } from "lucide-react"
+import SkillCard from "./SkillCard"
+import { Monitor, Server, Database, Wrench } from "lucide-react"
 
 const skills = [
   {
@@ -9,8 +10,10 @@ const skills = [
       { name: "HTML", icon: "/icons/html5.svg" },
       { name: "CSS", icon: "/icons/css3.svg" },
       { name: "JavaScript", icon: "/icons/javascript.svg" },
+      { name:"TypeScript", icon: "/icons/typescript.svg" },
       { name: "React", icon: "/icons/react.svg" },
-      { name: "TailwindCSS", icon: "/icons/tailwindcss.svg" },
+      { name: "Tailwind CSS", icon: "/icons/tailwindcss.svg" },
+      { name:"Chakra UI", icon: "/icons/chakraui.svg" },
     ],
   },
   {
@@ -18,18 +21,26 @@ const skills = [
     icon: Server,
     items: [
       { name:"python", icon: "/icons/python.svg" },
-      { name:"TypeScript", icon: "/icons/typescript.svg" },
+      { name:"flask", icon: "/icons/flask.svg" },
       { name: "PHP", icon: "/icons/php.svg" },
+    ],
+  },
+  {
+    category: "Database",
+    icon: Database,
+    items: [
+      { name: "MAMP", icon: "/icons/mamp.svg" },
       { name: "MySQL", icon: "/icons/mysql.svg" },
       { name:"postgreSQL", icon:"/icons/postgresql.svg" },
     ],
   },
   {
-    category: "Other",
+    category: "Tools",
     icon: Wrench,
     items: [
       { name: "Git", icon: "/icons/git.svg" },
       { name: "GitHub", icon: "/icons/github.svg" },
+      { name:"vite", icon:"/icons/vite.svg" },
     ],
   },
 ]
@@ -53,42 +64,27 @@ export default function Skills() {
 
         {/* 3 Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {skills.map((group) => (
-            <div
-              key={group.category}
-              className="relative px-8 py-6 border border-white/20 rounded-2xl bg-secondary/40 backdrop-blur-sm"
-            >
-              <h3 className="flex items-center gap-3 text-primary text-xl font-bold mb-6">
-                {group.category}
-                <group.icon className="w-6 h-6 stroke-[1.5]" />
-              </h3>
+          {/* Frontend */}
+          {skills
+            .filter((g) => g.category === "Frontend")
+            .map((group) => (
+              <SkillCard
+                key={group.category}
+                group={group}
+              />
+            ))}
 
-              <div className="grid grid-cols-3 gap-6">
-                {group.items.map((skill) => (
-                  <div
-                    key={skill.name}
-                    className="
-                      flex flex-col items-center justify-center
-                      gap-3 p-4
-                      bg-white/30 backdrop-blur-sm
-                      border border-white/20 rounded-xl
-                      hover:border-white/40 hover:bg-white/40
-                      transition-colors
-                    "
-                  >
-                    <img
-                      src={skill.icon}
-                      alt={skill.name}
-                      className="w-16 h-16"
-                    />
-                    <span className="text-sm font-medium text-center">
-                      {skill.name}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+          {/* Right column */}
+          <div className="flex flex-col gap-4">
+            {skills
+              .filter((g) => g.category !== "Frontend")
+              .map((group) => (
+                <SkillCard
+                  key={group.category}
+                  group={group}
+                />
+              ))}
+          </div>
         </div>
       </div>
     </section>
