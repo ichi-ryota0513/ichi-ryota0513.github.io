@@ -5,6 +5,11 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      xs: "480px",
+      md: "768px",
+      lg: "1024px",
+    },
     extend: {
       colors: {
         primary: "#FF8709",
@@ -12,13 +17,6 @@ export default {
         base: "#050505",
       },
     },
-    theme: {
-      screens: {
-        xs: '480px',
-        md: '768px',
-        lg: '1024px',
-      },
-    }
   },
   plugins: [],
 }

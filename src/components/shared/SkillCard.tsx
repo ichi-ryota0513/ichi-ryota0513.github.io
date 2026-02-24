@@ -38,23 +38,25 @@ export default function SkillCard({
       </h3>
 
       {/* Skills */}
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(100px,1fr))]">
         {group.items.map((skill) => (
           <div
             key={skill.name}
-            className="
+            className={`
               flex flex-col items-center justify-center
-              gap-3 p-3
+              gap-2 p-4 lg:py-3 lg:px-2
+              aspect-square
               bg-white/30 backdrop-blur-sm
               border border-white/20 rounded-xl
-            "
+              lg:justify-between
+            `}
           >
             <img
               src={skill.icon}
               alt={skill.name}
-              className="w-16 h-16"
+              className="w-full h-full lg:w-auto lg:h-16 object-contain"
             />
-            <span className="text-sm font-medium text-center text-black">
+            <span className="hidden lg:block text-sm font-medium text-center text-black">
               {skill.name}
             </span>
           </div>

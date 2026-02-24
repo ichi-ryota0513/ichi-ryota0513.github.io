@@ -56,14 +56,21 @@ export default function Skills() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-10">
         {/* Section Title */}
-        <div className="mb-16">
-          <h2 className="text-white text-5xl md:text-6xl font-bold">
+        <div className="mb-5 xs:mb-10 md:mb-16">
+          <h2
+            className="
+              text-white
+              text-3xl xs:text-4xl md:text-6xl
+              font-bold
+              text-center md:text-left
+            "
+          >
             Skills
           </h2>
         </div>
 
         {/* 3 Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Frontend */}
           {skills
             .filter((g) => g.category === "Frontend")

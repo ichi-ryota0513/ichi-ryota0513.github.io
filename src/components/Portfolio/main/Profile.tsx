@@ -7,19 +7,44 @@ export default function Profile() {
       id="profile"
       className="relative min-h-screen flex items-center scroll-mt-20"
     >
+      {/* Background */}
       <SectionBackground variant="pattern1" />
 
       <div className="
         relative z-10
         max-w-5xl mx-auto w-full
-        px-4 md:px-10
+        px-10
         grid grid-cols-1 md:grid-cols-2
-        gap-8 md:gap-16
+        gap-4 md:gap-16
         items-center
+        text-center md:text-left
       ">
+
+        {/* Icon */}
+        <div className="
+          order-1 md:order-2
+          flex justify-center md:justify-end
+        ">
+          <div className="
+            w-40 h-40
+            md:w-52 md:h-52
+            lg:w-60 lg:h-60
+            rounded-full overflow-hidden
+            border border-white/20
+          ">
+            <img
+              src={iconImage}
+              alt="Profile Icon"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
         {/* Text */}
-        <div className="pt-12 md:pt-20">
-          <p className="text-primary text-xs md:text-sm tracking-widest mb-4">
+        <div className="order-2 md:order-1 md:pt-20">
+
+          {/* PCのみ表示 */}
+          <p className="hidden md:block text-primary text-xs md:text-sm tracking-widest mb-4">
             PORTFOLIO
           </p>
 
@@ -36,33 +61,17 @@ export default function Profile() {
             border border-white/20
             rounded-2xl
             bg-secondary/20 backdrop-blur-sm
+            mx-auto md:mx-0
+            max-w-xs
           ">
             <p className="text-white/70 leading-relaxed text-md">
               生年月日：2008年5月13日<br />
               趣味：サッカー観戦<br />
               特技：ルービックキューブ<br />
-              2025年度 キャンフェス実行委員長<br />
-              デジタル委員会ナレッジベース部門所属
             </p>
           </div>
         </div>
 
-        {/* Icon */}
-        <div className="flex justify-center md:justify-end">
-          <div className="
-            w-40 h-40
-            md:w-52 md:h-52
-            lg:w-60 lg:h-60
-            rounded-full overflow-hidden
-            border border-white/20
-          ">
-            <img
-              src={iconImage}
-              alt="Profile Icon"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
       </div>
     </section>
   )

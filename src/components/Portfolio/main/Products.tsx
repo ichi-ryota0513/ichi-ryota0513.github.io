@@ -35,7 +35,7 @@ export default function Products() {
   return (
     <section
       id="products"
-      className="relative py-32 scroll-mt-20"
+      className="relative py-10 xs:py-16 md:py-32 scroll-mt-20"
     >
       {/* Background */}
       <SectionBackground variant="pattern1" />
@@ -43,14 +43,21 @@ export default function Products() {
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-10">
         {/* Section Title */}
-        <div className="mb-16">
-          <h2 className="text-white text-5xl md:text-6xl font-bold">
+        <div className="mb-5 xs:mb-10 md:mb-16">
+          <h2
+            className="
+              text-white
+              text-3xl xs:text-4xl md:text-6xl
+              font-bold
+              text-center md:text-left
+            "
+          >
             Products
           </h2>
         </div>
 
         {/* Product List */}
-        <div className="space-y-10">
+        <div className="space-y-2 xs:space-y-4 md:space-y-10">
           {products.map((item, index) => (
             <a
               key={index}
@@ -59,9 +66,17 @@ export default function Products() {
               rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
               className="group block bg-secondary/20 backdrop-blur-sm"
             >
-              <div className="flex items-start gap-8 p-6 border rounded-xl border-white/20 hover:border-primary transition-colors">
+              <div className="flex items-start gap-8 p-3 xs:p-4 md:p-6 border rounded-xl border-white/20 hover:border-primary transition-colors">
                 {/* Icon */}
-                <div className="w-24 h-24 flex-shrink-0 overflow-hidden rounded-xl bg-secondary/60">
+                <div className="
+                  w-10 h-10
+                  xs:w-16 xs:h-16
+                  md:w-24 md:h-24
+                  flex-shrink-0
+                  overflow-hidden
+                  rounded-lg md:rounded-xl
+                  bg-secondary/60
+                ">
                   <img
                     src={item.image}
                     alt={item.title}
@@ -71,15 +86,23 @@ export default function Products() {
 
                 {/* Text */}
                 <div>
-                  <h3 className="text-white text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="
+                    text-white
+                    text-base xs:text-lg md:text-xl
+                    font-bold mb-2
+                    group-hover:text-primary transition-colors
+                  ">
                     {item.title}
                   </h3>
-                  <p className="text-white/70 leading-relaxed mb-4 max-w-2xl">
+                  <p className="
+                    hidden md:block
+                    text-white/70 leading-relaxed mb-4 max-w-2xl
+                  ">
                     {item.description}
                   </p>
 
                   {/* Tech */}
-                  <div className="flex flex-wrap gap-2">
+                  <div className="hidden xs:flex flex-wrap gap-2">
                     {item.tech.map((t) => (
                       <span
                         key={t}
