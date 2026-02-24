@@ -1,5 +1,5 @@
-import SectionBackground from "./SectionBackground"
-import SkillCard from "./SkillCard"
+import SectionBackground from "../../shared/SectionBackground"
+import SkillCard from "../../shared/SkillCard"
 import { Monitor, Server, Database, Wrench } from "lucide-react"
 
 const skills = [

@@ -1,4 +1,4 @@
-import SectionBackground from "./SectionBackground"
+import SectionBackground from "../../shared/SectionBackground"
 
 const products = [
   {
