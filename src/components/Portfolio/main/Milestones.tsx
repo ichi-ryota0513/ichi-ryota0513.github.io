@@ -6,7 +6,7 @@ const milestones = [
     title: "日経STOCKリーグ 一次審査通過",
   },
   {
-    year: "2026",
+    year: "",
     title: "プロジェクトNγ 全国共有会出場",
   },
   {
@@ -14,12 +14,12 @@ const milestones = [
     title: "ナレッジベース実行委員 活動開始",
   },
   {
-    year: "2025",
+    year: "",
     title: "キャンフェス実行委員長就任",
   },
   
   {
-    year: "2025",
+    year: "",
     title: "「ITパスポート かこもんくん」リリース",
   },
   {

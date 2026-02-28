@@ -16,47 +16,47 @@ type SkillCardProps = {
   className?: string
 }
 
-export default function SkillCard({
-  group,
-  className = "",
-}: SkillCardProps) {
+export default function SkillCard({ group, className = "" }: SkillCardProps) {
   const Icon = group.icon
 
   return (
     <div
       className={`
-        px-8 py-6
+        px-6 py-4
         border border-white/20 rounded-2xl
         bg-secondary/40 backdrop-blur-sm
         ${className}
       `}
     >
-      {/* Category title */}
+      {/* カテゴリタイトル */}
       <h3 className="flex items-center gap-3 text-primary text-xl font-bold mb-6">
         {group.category}
         <Icon className="w-6 h-6 stroke-[1.5]" />
       </h3>
 
-      {/* Skills */}
-      <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(100px,1fr))]">
+      {/* スキルグリッド */}
+      <div className="grid gap-2 lg:gap-4 md:grid-cols-3 grid-cols-4">
         {group.items.map((skill) => (
           <div
             key={skill.name}
-            className={`
-              flex flex-col items-center justify-center
-              gap-2 p-4 lg:py-3 lg:px-2
+            className="
               aspect-square
+              flex flex-col items-center justify-center
               bg-white/30 backdrop-blur-sm
               border border-white/20 rounded-xl
-              lg:justify-between
-            `}
+              p-2 md:p-3 lg:py-2 lg:px-4
+            "
           >
             <img
               src={skill.icon}
               alt={skill.name}
-              className="w-full h-full lg:w-auto lg:h-16 object-contain"
+              className="
+                w-full h-full
+                max-w-[105px] max-h-[105px] lg:max-w-none lg:max-h-none
+                object-contain
+              "
             />
-            <span className="hidden lg:block text-sm font-medium text-center text-black">
+            <span className="hidden lg:block text-sm font-medium text-center text-black mt-1">
               {skill.name}
             </span>
           </div>

@@ -22,13 +22,6 @@ const products = [
     link: "https://ip-kakomonkun.com",
     tech: ["PHP", "JavaScript", "MySQL"],
   },
-  {
-    title: "キャンフェスサイト2024",
-    description: "2024年度静岡キャンパスフェスティバル公式サイト。",
-    image: "/images/default.png",
-    link: "https://nnn-shizuoka.github.io/campus-festival-2024/",
-    tech: ["HTML", "CSS", "JavaScript"],
-  },
 ]
 
 export default function Products() {
@@ -57,7 +50,7 @@ export default function Products() {
         </div>
 
         {/* Product List */}
-        <div className="space-y-2 xs:space-y-4 md:space-y-10">
+        <div className="space-y-4 md:space-y-6 lg:space-y-8">
           {products.map((item, index) => (
             <a
               key={index}
@@ -66,11 +59,10 @@ export default function Products() {
               rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
               className="group block bg-secondary/20 backdrop-blur-sm"
             >
-              <div className="flex items-start gap-8 p-3 xs:p-4 md:p-6 border rounded-xl border-white/20 hover:border-primary transition-colors">
+              <div className="flex items-start gap-8 p-4 md:p-6 border rounded-xl border-white/20 hover:border-primary transition-colors">
                 {/* Icon */}
                 <div className="
-                  w-10 h-10
-                  xs:w-16 xs:h-16
+                  w-16 h-16
                   md:w-24 md:h-24
                   flex-shrink-0
                   overflow-hidden
@@ -88,9 +80,10 @@ export default function Products() {
                 <div>
                   <h3 className="
                     text-white
-                    text-base xs:text-lg md:text-xl
+                    text-base text-lg md:text-xl
                     font-bold mb-2
                     group-hover:text-primary transition-colors
+                    break-keep
                   ">
                     {item.title}
                   </h3>
@@ -102,7 +95,7 @@ export default function Products() {
                   </p>
 
                   {/* Tech */}
-                  <div className="hidden xs:flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {item.tech.map((t) => (
                       <span
                         key={t}

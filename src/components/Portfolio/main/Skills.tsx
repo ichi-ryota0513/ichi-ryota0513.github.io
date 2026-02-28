@@ -70,27 +70,17 @@ export default function Skills() {
         </div>
 
         {/* 3 Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-0 xs:mx-12 md:mx-0">
           {/* Frontend */}
-          {skills
-            .filter((g) => g.category === "Frontend")
-            .map((group) => (
-              <SkillCard
-                key={group.category}
-                group={group}
-              />
-            ))}
+          {skills.filter((g) => g.category === "Frontend").map(group => (
+            <SkillCard key={group.category} group={group} />
+          ))}
 
           {/* Right column */}
           <div className="flex flex-col gap-4">
-            {skills
-              .filter((g) => g.category !== "Frontend")
-              .map((group) => (
-                <SkillCard
-                  key={group.category}
-                  group={group}
-                />
-              ))}
+            {skills.filter((g) => g.category !== "Frontend").map(group => (
+              <SkillCard key={group.category} group={group} />
+            ))}
           </div>
         </div>
       </div>
