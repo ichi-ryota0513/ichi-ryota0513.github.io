@@ -65,6 +65,7 @@ export default function Profile() {
             max-w-xs
           ">
             <p className="text-white/70 leading-relaxed text-md">
+              ニックネーム：いっちー<br />
               生年月日：2008年5月13日<br />
               趣味：サッカー観戦<br />
               特技：ルービックキューブ<br />
