@@ -2,9 +2,11 @@ import SectionBackground from "../shared/SectionBackground"
 
 const snsLinks = [
   { name: "LINE", image: "/sns/line.svg", link: "https://line.me/ti/p/BjsXI41P4L" },
-  { name: "X (Twitter)", image: "/sns/x.svg", link: "https://x.com/ichi_ryota0513" },
   { name: "Instagram", image: "/sns/instagram.svg", link: "https://www.instagram.com/ichi.ryota" },
-  { name: "Times", image: "/sns/slack.svg", link: "https://n-highschool.slack.com/archives/C079G2D19H9" },
+  { name: "X (Twitter)", image: "/sns/x.svg", link: "https://x.com/ichi_ryota0513" },
+  { name: "BeReal", image: "/sns/bereal.svg", link: "https://bere.al/ichi.ryota" },
+  { name: "times", image: "/sns/slack.svg", link: "https://n-highschool.slack.com/archives/C079G2D19H9" },
+  { name: "Discord", image: "/sns/discord.svg", link: "https://discord.gg/xcjwJBhx" },
   { name: "GitHub", image: "/sns/github.svg", link: "https://github.com/ichi-ryota0513" },
   { name: "Portfolio", image: "/sns/web.svg", link: "/" },
 ]
@@ -32,7 +34,7 @@ export default function SNS() {
             <a
               key={index}
               href={item.link}
-              target={item.link.startsWith("http") ? "_blank" : undefined}
+              target="_blank"
               rel="noopener noreferrer"
               className="
                 flex items-center gap-4
