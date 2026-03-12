@@ -70,7 +70,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="relative z-10 mt-12 md:mt-16 text-center text-white/40 text-xs md:text-sm px-4">
-        © {new Date().getFullYear()} RYOTA. All Rights Reserved.
+        © {new Date().getFullYear()} ichi-ryota0513. All Rights Reserved.
       </div>
     </footer>
   )

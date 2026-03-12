@@ -8,7 +8,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="relative z-10 text-center text-white/40 text-sm">
-        © {new Date().getFullYear()} RYOTA. All Rights Reserved.
+        © {new Date().getFullYear()} ichi-ryota0513. All Rights Reserved.
       </div>
     </footer>
   )
