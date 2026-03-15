@@ -20,8 +20,8 @@ const skills = [
     category: "Backend",
     icon: Server,
     items: [
-      { name:"python", icon: "/icons/python.svg" },
-      { name:"flask", icon: "/icons/flask.svg" },
+      { name:"Python", icon: "/icons/python.svg" },
+      { name:"Flask", icon: "/icons/flask.svg" },
       { name: "PHP", icon: "/icons/php.svg" },
     ],
   },
@@ -29,9 +29,8 @@ const skills = [
     category: "Database",
     icon: Database,
     items: [
-      { name: "MAMP", icon: "/icons/mamp.svg" },
       { name: "MySQL", icon: "/icons/mysql.svg" },
-      { name:"postgreSQL", icon:"/icons/postgresql.svg" },
+      { name:"PostgreSQL", icon:"/icons/postgresql.svg" },
     ],
   },
   {
@@ -40,7 +39,7 @@ const skills = [
     items: [
       { name: "Git", icon: "/icons/git.svg" },
       { name: "GitHub", icon: "/icons/github.svg" },
-      { name:"vite", icon:"/icons/vite.svg" },
+      { name: "Docker", icon: "/icons/docker.svg" },
     ],
   },
 ]
