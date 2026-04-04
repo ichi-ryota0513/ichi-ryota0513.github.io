@@ -3,6 +3,10 @@ import SectionBackground from "../../shared/SectionBackground"
 const milestones = [
   {
     year: "2026",
+    title: "「Boostudy」リリース",
+  },
+  {
+    year: "",
     title: "日経STOCKリーグ 一次審査通過",
   },
   {
