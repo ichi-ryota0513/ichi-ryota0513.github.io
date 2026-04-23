@@ -6,7 +6,6 @@ const snsLinks = [
   { name: "X (Twitter)", image: "/sns/x.svg", link: "https://x.com/ichi_ryota0513" },
   { name: "BeReal", image: "/sns/bereal.svg", link: "https://bere.al/ichi.ryota" },
   { name: "times", image: "/sns/slack.svg", link: "https://n-highschool.slack.com/archives/C079G2D19H9" },
-  { name: "Discord", image: "/sns/discord.svg", link: "https://discord.gg/xcjwJBhx" },
   { name: "GitHub", image: "/sns/github.svg", link: "https://github.com/ichi-ryota0513" },
   { name: "Portfolio", image: "/sns/web.svg", link: "/" },
 ]
